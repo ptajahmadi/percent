@@ -2,6 +2,7 @@ package percent
 
 // Percent - calculate what %[number1] of [number2] is.
 // ex. 25% of 200 is 50
+// ex. 20% of 200 is 40
 func Percent(percent int, all int) float64 {
 	return ((float64(all) * float64(percent)) / float64(100))
 }
