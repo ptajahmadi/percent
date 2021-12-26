@@ -11,6 +11,20 @@ func TestPercent(t *testing.T) {
 	if part != 50.0 {
 		t.Fatalf("%d is wrong number for %d percent", int(part), pct)
 	}
+
+	pct, total = 20, 200
+	part = Percent(pct, total)
+
+	if part != 40.0 {
+		t.Fatalf("%d is wrong number for %d percent", int(part), pct)
+	}
+
+	pct, total = 10, 200
+	part = Percent(pct, total)
+
+	if part != 20.0 {
+		t.Fatalf("%d is wrong number for %d percent", int(part), pct)
+	}
 }
 
 func TestPercentFloat(t *testing.T) {
